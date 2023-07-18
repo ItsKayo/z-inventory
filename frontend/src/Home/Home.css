@@ -1,0 +1,22 @@
+.itemTableContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .itemTable {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .itemTable, th, td {
+    border: 1px solid black;
+  }
+  
+  th, td {
+    padding: 0.5em;
+  }
+  
+  #tableTitle {
+    text-align: center;
+  }
