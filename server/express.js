@@ -14,6 +14,11 @@ app.get('/users', (req, res) => {
     .then(data => res.send(data))
 })
 
+app.get('/users/:userid', (req, res) => {
+    knex('users').select('users.first_name', 'users.last_name').where('users.id' , '=', req.params.userid)
+    .then(data => res.send(data))
+})
+
 app.post('/users', async (req, res) => {
     const newUser = req.body
     

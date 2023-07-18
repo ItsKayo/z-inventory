@@ -3,8 +3,15 @@ import './Home.css'
 import React, {useContext} from 'react'
 
 function Home() {
-    const {items} = useContext(ParentContext)
-    console.log(items)
+    const {users, items} = useContext(ParentContext)
+
+    const getInventoryManager = (userid) => {
+        for (let i=0; i < users.length; i++) {
+            if (users[i].id === userid) {
+                return <td>{`${users[i].first_name} ${users[i].last_name}`}</td>
+            }
+        }
+    }
 
     return (
         <div className="itemTableContainer">
@@ -15,6 +22,7 @@ function Home() {
                         <th>Item</th>
                         <th>Description</th>
                         <th>Quantity</th>
+                        <th>Inventory Manager</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -23,6 +31,7 @@ function Home() {
                             <td>{item.item_name}</td>
                             <td>{item.description}</td>
                             <td>{item.quantity}</td>
+                            {getInventoryManager(item.user_id)}
                         </tr>
                     )}
                 </tbody>

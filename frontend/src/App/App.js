@@ -24,8 +24,6 @@ function App() {
       .then(data => setUsers(data))
   }, [])
 
-  console.log(users)
-
   return (
     <ParentContext.Provider value={{ items, users, auth, loggedInUser, setLoggedInUser, setAuth, setUsers, setItems}}>
       <Navbar />
