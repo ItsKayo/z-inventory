@@ -10,3 +10,10 @@
 - Run ```docker exec -it <container-ID> bash```
 - Run ```psql -U postgres```
 - Run ```CREATE DATABASE z_inventory```
+  
+# Running the local servers
+- Open two fresh command prompts
+- In one command prompt, navigate to the server directory
+- Run ```npm start```
+- In the other command prompt, navigate to the frontend directory
+- Run ```npm start```
