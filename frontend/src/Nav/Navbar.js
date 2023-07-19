@@ -16,7 +16,7 @@ function Navbar() {
             <ul className="nav">
                 <li><Link id="home" to="/">Home</Link></li>
                 <li><Link id="inventory" to="/inventory">Inventory</Link></li>
-                <li id="welcome">Welcome {`${loggedInUser}`}!</li>
+                <li id="welcome">Welcome {`${loggedInUser.first_name} ${loggedInUser.last_name}`}!</li>
                 <li><Link id="logout" to="/" onClick={() => handleLogout()}>Logout</Link></li>
             </ul>
         )

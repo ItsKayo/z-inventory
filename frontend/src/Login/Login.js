@@ -20,7 +20,7 @@ function Login() {
 
             if ((users[i].username === username) && (users[i].password === password)) {
                 setAuth(true)
-                setLoggedInUser(users[i].first_name + ' ' + users[i].last_name)
+                setLoggedInUser(users[i])
                 alert('Logged in')
                 navigate('/inventory')
                 return

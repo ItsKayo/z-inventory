@@ -7,6 +7,9 @@
   .itemTable {
     margin-left: auto;
     margin-right: auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 12px 2px rgb(27, 27, 27); 
   }
   
   .itemTable, th, td {
@@ -16,7 +19,20 @@
   th, td {
     padding: 0.5em;
   }
+
+  th {
+    background: hsla(204, 70%, 53%, 1);
+    color: black;
+  }
   
   #tableTitle {
     text-align: center;
+    color: white;
+  }
+
+  .quantTable {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 760px;
   }

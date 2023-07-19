@@ -8,7 +8,7 @@ exports.up = function(knex) {
         table.integer('user_id')
         table.foreign('user_id').references('users.id')
         table.string('item_name')
-        table.string('description')
+        table.string('description', 65000)
         table.integer('quantity')
       })
 };

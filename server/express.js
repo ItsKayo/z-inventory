@@ -65,6 +65,11 @@ app.get('/items/:userid', (req, res) => {
     .then(data => res.send(data))
 })
 
+app.get('/item/:item', (req, res) => {
+    knex('items').select('*').where('items.item_name', '=', req.params.item)
+    .then(data => res.send(data))
+})
+
 app.post('/items', async (req, res) => {
     const newItem = req.body
     

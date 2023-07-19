@@ -1,6 +1,7 @@
 import { ParentContext } from "../App/App";
 import './Home.css'
 import React, {useContext} from 'react'
+import { Link } from 'react-router-dom'
 
 function Home() {
     const {users, items} = useContext(ParentContext)
@@ -28,8 +29,8 @@ function Home() {
                 <tbody>
                     {items.map(item => 
                         <tr>
-                            <td>{item.item_name}</td>
-                            <td>{item.description}</td>
+                            <td><Link to={`/item/${item.item_name}`}>{item.item_name}</Link></td>
+                            <td className="quantTable">{item.description}</td>
                             <td>{item.quantity}</td>
                             {getInventoryManager(item.user_id)}
                         </tr>

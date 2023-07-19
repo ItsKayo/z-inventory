@@ -1,0 +1,97 @@
+.page {
+    background: white;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 12px 2px rgb(27, 27, 27); 
+}
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.addForm {
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    margin-top: 2em;
+}
+
+.formItem {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5em;
+}
+
+#formTitle {
+    text-align: center;
+}
+
+#description {
+    min-width: 40em;
+    max-width: 40em;
+    height: fit-content;
+    resize: none;
+    border: none;
+    font-size: 16px;
+    color: black;
+    background: none;
+}
+
+#name {
+    max-width: fit-content;
+    border: none;
+    font-size: 16px;
+    color: black;
+    background: none;
+}
+
+#quantity {
+    max-width: fit-content;
+    border: none;
+    font-size: 16px;
+    color: black;
+    background: none;
+}
+
+#name-edit {
+    max-width: fit-content;
+    font-size: 16px;
+}
+
+#description-edit {
+    min-width: 40em;
+    max-width: 40em;
+    min-height: 15em;
+    resize: none;
+    font-size: 16px;
+}
+
+#quantity-edit {
+    max-width: fit-content;
+    font-size: 16px;
+}
+
+#addButton {
+    width: fit-content;
+}
+
+.addItemButtons {
+    display: flex;
+    justify-content: space-around;
+    min-width: 100%;
+    margin-bottom: 2em;
+}
+
+.buttonsContainer {
+    display: flex;
+    justify-content: center;
+    max-width: 30em;
+    margin-left: auto;
+    margin-right: auto;
+}
